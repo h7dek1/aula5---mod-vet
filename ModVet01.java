@@ -10,8 +10,7 @@ public class ModVet01 {
         int contMedia = 0;
 
         for (int i = 0; i < vetor.length; i++) { 
-            vetor[i] = Integer.parseInt(
-                JOptionPane.showInputDialog("Digite o valor da posição " + i + ":"));
+            vetor[i] = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor da posição " + i + ":"));
  
             // Soma dos ímpares
         if (vetor[i] % 2 != 0) {
