@@ -11,14 +11,11 @@ public class ModVet01 {
 
         for (int i = 0; i < vetor.length; i++) { 
             vetor[i] = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor da posição " + i + ":"));
- 
-            // Soma dos ímpares
-        if (vetor[i] % 2 != 0) {
+            
+        if (vetor[i] % 2 != 0) { // Soma dos ímpares
             somaImpares += vetor[i];
         }
- 
-            // Valores entre 10 e 200
-        if (vetor[i] >= 10 && vetor[i] <= 200) {
+        if (vetor[i] >= 10 && vetor[i] <= 200) { // Valores entre 10 e 200
             somaMedia += vetor[i];
             contMedia++;
         }
@@ -27,7 +24,6 @@ public class ModVet01 {
         if (contMedia > 0) {
             media = (double) somaMedia / contMedia;
     }
-
         JOptionPane.showMessageDialog(null,"Média dos valores entre 10 e 200 = " + media + "\nSoma dos números ímpares = " + somaImpares);
     }
 }
